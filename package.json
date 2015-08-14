@@ -1,0 +1,19 @@
+{
+  "name": "angular-msgbox",
+  "version": "0.0.2",
+  "description": "Angular JS Modal MessageBox",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JorgeJuarezM/Angular-MsgBox.git"
+  },
+  "author": "Jorge Luis Juarez <contacto@jorgejuarez.net> (http://jorgejuarez.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JorgeJuarezM/Angular-MsgBox/issues"
+  },
+  "homepage": "https://github.com/JorgeJuarezM/Angular-MsgBox"
+}
