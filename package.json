@@ -1,6 +1,6 @@
 {
   "name": "angular-msgbox",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Angular JS Modal MessageBox",
   "main": "server.js",
   "scripts": {
