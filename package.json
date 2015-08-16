@@ -8,12 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JorgeJuarezM/Angular-MsgBox.git"
+    "url": "git+https://github.com/JorgeJuarezM/Angular-MsgBox.git"
   },
   "author": "Jorge Luis Juarez <contacto@jorgejuarez.net> (http://jorgejuarez.net/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JorgeJuarezM/Angular-MsgBox/issues"
   },
-  "homepage": "https://github.com/JorgeJuarezM/Angular-MsgBox"
+  "homepage": "https://github.com/JorgeJuarezM/Angular-MsgBox",
+  "devDependencies": {
+    "express": "^4.13.3"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }

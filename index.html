@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular MsgBox</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+</head>
+<body data-ng-app="app" data-ng-controller="Controller">
+    
+    <div class="container">
+        <h1 class="page-header">Angular MsgBox</h1>
+        <button class="btn btn-primary" data-ng-click="show($event)">Show Msgbox</button>
+    </div>
+        
+    
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="/angular-msgbox.js"></script>
+    
+    
+    <script type="text/javascript">
+        angular.module("app", ["msgbox"])
+        .controller("Controller", function($scope, $msgbox){
+            $scope.show = function(){
+                $msgbox.show("Hello World")
+                .then(function(){
+                    $msgbox.show("Ok clicked", {
+                        title: "Success Title"
+                    });
+                }, function(){
+                    $msgbox.show("Cancel clicked", {
+                        title: "Cancel Title"
+                    });
+                });
+            };
+        });
+    </script>
+</body>
+</html>
